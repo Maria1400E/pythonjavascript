@@ -1,0 +1,57 @@
+polizaSalud = []
+ingresoEstrato = 0
+ingresSalario = 0
+
+while True:
+    print("ingrese una opcion")
+    print("opcion 1: ingresar nuevo asociado")
+    print("opcion 2: generar resumen")
+    print("opcion 3: salir")
+    personas = int(input("Escriba su opcion: "))
+
+    if personas == 1:
+        ingresoEstrato = int(input("Ingrese el estrato de la persona: "))
+        ingresSalario = int(input("Ingrese el salario de la persona: "))
+        polizaSalud.append({'estrato':ingresoEstrato,'salario':ingresSalario,'subcidio':valorSubsidio})
+        poliza = ingresSalario * 0.05
+        if ingresoEstrato == 1:
+            valorSubsidio = poliza * 0.50
+            print("El valor de su poliza es de: ", poliza)
+            print("El valor Subsidiado por el fondo es: ", valorSubsidio)
+            print("El valor que debe cubrir el asociado es: ", poliza - valorSubsidio)
+        if ingresoEstrato == 2:
+            valorSubsidio = poliza * 0.40
+            print("El valor de su poliza es de: ", poliza)
+            print("El valor Subsidiado por el fondo es: ", valorSubsidio)
+            print("El valor que debe cubrir el asociado es: ", poliza - valorSubsidio)
+        if ingresoEstrato == 3:
+            valorSubsidio = poliza * 0.30
+            print("El valor de su poliza es de: ", poliza)
+            print("El valor Subsidiado por el fondo es: ", valorSubsidio)
+            print("El valor que debe cubrir el asociado es: ", poliza - valorSubsidio)
+        if ingresoEstrato == 4:
+            valorSubsidio = poliza * 0.20
+            print("El valor de su poliza es de: ", poliza)
+            print("El valor Subsidiado por el fondo es: ", valorSubsidio)
+            print("El valor que debe cubrir el asociado es: ", poliza - valorSubsidio)
+        if ingresoEstrato > 4:
+           valorSubsidio = poliza * 0.10
+           print("El valor de su poliza es de: ", poliza)
+           print("El valor Subsidiado por el fondo es: ", valorSubsidio)
+           print("El valor que debe cubrir el asociado es: ", poliza - valorSubsidio)
+    
+    if personas == 2:
+        numeroEstratos = ingresoEstrato.count()
+        if numeroEstratos == 1:
+            print("Del estrato 1 hay", numeroEstratos, "Insrcitos")
+        if numeroEstratos == 2:
+            print("Del estrato 2 hay", numeroEstratos, "Insrcitos")
+        if numeroEstratos == 3:
+            print("Del estrato 2 hay", numeroEstratos, "Insrcitos")
+        if numeroEstratos == 4:
+            print("Del estrato 2 hay", numeroEstratos, "Insrcitos")
+        if numeroEstratos > 4:
+            print("De otro estrato hay", numeroEstratos, "Insrcitos")
+           
+
+
