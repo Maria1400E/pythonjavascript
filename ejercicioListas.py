@@ -62,16 +62,13 @@ print("False está presente en el texto", x ,"veces")
 
 print("-----------------------------------------")
 
-posicion = mixta.index(25)
-
+edad = mixta[2]
 for x in mixta:
-    if ("pepito" in mixta and "perez" in mixta):
+    if ("pepito" in mixta and "perez" in mixta and edad >= 18 and 12552241 in mixta):
         print("La persona se encontró")
+        print("La persona es mayor de edad")
+        print("El numero está correcto")
         break
     else:
         print("La persona no se encontró")
         break
-
-if posicion >= 18:
-    print("la persona es mayor de edad")
-   
