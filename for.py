@@ -37,14 +37,13 @@ print("-------------------------------")
 
 num = int(input("Ingrese un numero: "))
 
-y = 1
-salida = ''
+y=0
 for x in range(1,num+1):
-    for z in range(1,x+1):
-        salida += (str(y)+(' '))
-        y += 2
-    print(salida) 
-    salida = ''
+    y = (x * 2) - 1
+    for z in range(y, 0, -2):
+        print(z, end = ' ') 
+    print()
+
 
 print("-------------------------------")
 
