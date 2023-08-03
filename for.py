@@ -47,8 +47,7 @@ for x in range(1,num+1):
 
 print("-------------------------------")
 
-multi = int(input("Ingrese el numero: "))
-
 for m in range(1,11):
-    for n in range(1):
-        print(multi," x ",m," = ",multi*m)
+    for n in range(1,11):
+        print(m," x ",n," = ",m*n)
+    print(" ")
