@@ -28,3 +28,7 @@ while True:
     print()        
     print("El numero correcto era: ",numAle)
     print("EL JUEGO FINALIZÓ")
+    print()
+    volverJugar = input("Quiere volver a jugar? (s/n): ")
+    if volverJugar.lower() != "s":
+        break
