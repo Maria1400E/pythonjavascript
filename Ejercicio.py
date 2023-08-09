@@ -10,7 +10,7 @@ c. Mostrar el promedio de edad de hombres beneficiados
 d. Mostrar el promedio de edad de mujeres beneficiadas
 
 Indicar mediante un mensaje cuando no se es beneficiado."""
-persona = []
+persona = {}
 ingresoEdad = 0
 ingresoEstrato = 0
 ingresoGenero = 0
