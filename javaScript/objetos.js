@@ -10,10 +10,11 @@ let myNewCar = new Object();
 myNewCar.make = "Ford";
 myNewCar.model = "Mustang";
 myNewCar.year = 1969;
+
 console.log(myNewCar)
 
 
-const personaje = {
+let personaje = {
     nombre: 'Tony Stark',
     codeName: 'Ironman',
     vivo: false,
@@ -35,7 +36,7 @@ const personaje = {
     },
 };
 
-console.log(personaje.func());
+console.log('Mi nombre es ',personaje.func());
 console.log( personaje );
 console.log('Nombre', personaje.nombre );
 console.log('Nombre', personaje['nombre'] );
