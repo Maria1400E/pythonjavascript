@@ -1,4 +1,4 @@
-/*function mkDate(dia,mes,año){
+function mkDate(dia,mes,año){
     return {
         day: dia,
         month: mes,
@@ -17,7 +17,7 @@
             if (this.isValid()) {
               document.write(`${this.day}/${this.month}/${this.year}<br/>`);
             } else {
-              document.write("Fecha inválida");
+              document.write(`Fecha invalida <br/>`);
             }
           }
     };
@@ -74,29 +74,29 @@ vestido.descuento = parseInt(prompt("Precio bruto "));
 console.log("El precio neto es "+vestido.neto()+"$");
 
 //PUNTO 10
-let cadena = prompt("Escriba un texto");
-let texto = cadena.split("");
+let cadena1 = prompt("Escriba un texto");
+let texto = cadena1.split("");
 let resultado = texto.join("-");
 console.log(resultado);
 
 //PUNTO 11
 
-let cadena = prompt("Escriba una textoque contenga parentesis")
+let cadena2 = prompt("Escriba una textoque contenga parentesis")
 
-if (cadena.includes('(')) {
+if (cadena2.includes('(')) {
     
-    var cadenaTemp= cadena.split('(');
+    var cadenaTemp= cadena2.split('(');
     
-    cadena = cadenaTemp[1]; 
+    cadena2 = cadenaTemp[1]; 
     
-    if (cadena.includes(')')) {
+    if (cadena2.includes(')')) {
          
-        var cadenaTemp= cadena.split(')');
+        var cadenaTemp= cadena2.split(')');
         
-        cadena = cadenaTemp[0];
+        cadena2 = cadenaTemp[0];
     }
 }
-console.log(cadena);
+console.log(cadena2);
 
 //PUNTOS
 
@@ -123,4 +123,6 @@ function esPalindromo(texto) {
   console.log("El texto es un palíndromo.");
   } else {
   console.log("El texto no es un palíndromo.");
-  }*/
+  }
+
+  
