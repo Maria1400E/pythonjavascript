@@ -1,4 +1,4 @@
-function mkDate(dia,mes,año){
+/*function mkDate(dia,mes,año){
     return {
         day: dia,
         month: mes,
@@ -61,7 +61,7 @@ let promedio = sumCalifi/3;
 console.log('El estudiante',calificaciones.nombre,'tiene un promedio de ',promedio);
 
 //PUNTO 8
-var vestido, dato;
+var vestido;
 vestido = {
    precio: 0,
    descuento: 0,
@@ -70,7 +70,7 @@ vestido = {
     }
 }
 vestido.precio = parseInt(prompt("Precio bruto "));
-vestido.descuento = parseInt(prompt("Precio bruto "));
+vestido.descuento = parseInt(prompt("Descuento"));
 console.log("El precio neto es "+vestido.neto()+"$");
 
 //PUNTO 10
@@ -98,7 +98,7 @@ if (cadena2.includes('(')) {
 }
 console.log(cadena2);
 
-//PUNTOS
+//PUNTO 12
 
 let  cadena = prompt("Escriba un texto")
 
@@ -107,7 +107,7 @@ function reverseString(str){
   return desorCad.reverse().join("");
 }
 
-document.write(reverseString(cadena));
+document.write(reverseString(cadena));*/
 
 //PUNTO 13
 
