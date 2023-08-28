@@ -5,3 +5,21 @@ print(len(tupla))
 
 ## Polimorfismo de clase 
 
+class carro:
+    def __init__(self,modelo,marca):
+        self.modelo = modelo
+        self.marca = marca
+    
+    def movimiento(self):
+        print("Conducir")
+
+class barco:
+   
+    def movimiento(self):
+        print("Navega")
+
+class avion(carro):
+   
+    def movimiento(self):
+        print("Vuela")
+
