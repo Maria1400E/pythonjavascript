@@ -18,5 +18,3 @@ if (edad1 < 18) {
 } else {
   console.log("Alice tiene mas de 21 años.");
 }
-
-
