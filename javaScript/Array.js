@@ -34,9 +34,57 @@ console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
 
-console.log("----PUNTO 3-----")
+console.log("-------PUNTO 4-------")
+const numero = parseInt(prompt("Por favor, ingresa un número entero: "));
 
-num = prompt("Ingrese un numero entero");
+if (isNaN(numero)) {
+  console.log("Por favor, ingresa un número válido.");
+} else {
+  for (let i = 1; i <= numero; i++) {
+    const linea = "*".repeat(i);
+    console.log(linea);
+  }
+}
 
+console.log("-------PUNTO 5------")
+function obtenerEntradaUsuario() {
+    return prompt("Escribe algo (o escribe 'salir' para terminar):");
+  }
+  let entrada = obtenerEntradaUsuario();
+
+  while (entrada.toLowerCase() !== "salir") {
+    console.log("Eco: " + entrada);
+    entrada = obtenerEntradaUsuario();
+  }
+console.log("Programa terminado.");
+
+console.log("-----PUNTO 6------")
+let fechaNacimiento = prompt("Por favor, ingresa tu fecha de nacimiento (AAAA-MM-DD):");
+
+let fechaNac = new Date(fechaNacimiento);
+
+let fechaActual = new Date();
+
+let edad = fechaActual.getFullYear() - fechaNac.getFullYear();
+
+if (
+  fechaActual.getMonth() < fechaNac.getMonth() ||
+  (fechaActual.getMonth() === fechaNac.getMonth() && fechaActual.getDate() < fechaNac.getDate())
+) {
+  edad--; 
+}
+console.log("Tienes " + edad + " años.");
+
+console.log("-------PUNTO 7-------")
+const edad1 = parseInt(prompt("Por favor, ingresa tu edad:"));
+
+const añoActual = new Date().getFullYear();
+
+const añoNacimiento = añoActual - edad1;
+
+console.log("Naciste en el año " + añoNacimiento + ".");
+
+
+  
 
 
